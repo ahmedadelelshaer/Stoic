@@ -14,21 +14,21 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name="idUser")
-    public int idUser;
+    private int idUser;
 
     @Column(name="userName",nullable=false)
-    public String username;
+    private String username;
 
     @Column(name="email",nullable=false)
-    public String email;
+    private String email;
 
     @Column(name="passHash",nullable=false)
-    public String password;
+    private String password;
 
     @Column(name="userRole")
-    public UserRole userRole;
+    private UserRole userRole;
 
     @Column(name="language")
-    public Language language;
+    private Language language;
 
 }
